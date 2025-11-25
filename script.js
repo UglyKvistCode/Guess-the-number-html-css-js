@@ -19,6 +19,8 @@ function checkGuess(){
         msg = guess + " is Correct!";
         msg = msg + " Try a new game :";
         msg = msg + " You won in " + tries + " tries.";
+    let scoreboard = document.getElementById("scoreboard");
+    scoreboard.innerHTML = "You guessed " + guess + " in " + tries + " tries. <br>" + scoreboard.innerHTML;
         newGame();
     }
 let output = document.getElementById("output");
