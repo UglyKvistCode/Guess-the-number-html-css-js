@@ -8,17 +8,12 @@
 </head>
 <body>
 <h1>Guessing Game</h1>
-<form action="">
+<form action="" onsubmit="checkGuess(); return false">
     Enter a number between 1 and 100:
     <input type="text" id="guess" size="2">
     <button type="button" onclick="checkGuess()">Guess!</button>
 </form>
 <h3 id="output">Guess a number and press the button.</h3>
-
-
-
-
-
 
 <script src="script.js"></script>
 </body>
